@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Kaliel Williamson</title>
+  <desc id="desc">ML systems engineer and independent researcher</desc>
+  <rect width="1200" height="630" fill="#f5f3ed"/>
+  <path d="M72 85H1128" stroke="#d2d5ca" stroke-width="2"/>
+  <text x="72" y="145" fill="#1d2822" font-family="monospace" font-size="30" font-weight="700">KW<tspan fill="#a9472b">.</tspan></text>
+  <text x="72" y="228" fill="#526159" font-family="monospace" font-size="18" letter-spacing="3">ML SYSTEMS ENGINEER · INDEPENDENT RESEARCHER</text>
+  <text x="72" y="340" fill="#1d2822" font-family="Georgia, serif" font-size="74" font-weight="600">Research-minded engineering,</text>
+  <text x="72" y="428" fill="#a9472b" font-family="Georgia, serif" font-size="74" font-style="italic">grounded in practice.</text>
+  <text x="72" y="560" fill="#526159" font-family="monospace" font-size="19">CAUSAL INFORMATION ACQUISITION · REPLAYABLE AGENT EVALUATION · COST-SENSITIVE CONTROL</text>
+</svg>
