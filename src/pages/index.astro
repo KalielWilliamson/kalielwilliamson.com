@@ -1,7 +1,7 @@
 ---
 const links = {
 	github: 'https://github.com/KalielWilliamson',
-	linkedin: '#', // Replace with your public LinkedIn profile URL.
+	linkedin: 'https://www.linkedin.com/in/kaliel-williamson-94105188',
 	orcid: '#', // Replace with your ORCID URL.
 	zenodo: '#', // Replace with the Zenodo manuscript record URL.
 	cv: '#', // Add your CV PDF under public/ and update this path.
@@ -10,9 +10,9 @@ const links = {
 const projects = [
 	{
 		title: 'Causal Observability',
-		type: 'Research & engineering',
+		type: 'Research manuscript',
 		description:
-			'Building practical methods for measuring and improving the causal structure of learned representations.',
+			'Investigating methods for measuring and improving the causal structure of learned representations.',
 		link: links.zenodo,
 		linkLabel: 'Read the manuscript',
 	},
@@ -20,7 +20,7 @@ const projects = [
 		title: 'AlphaFlow',
 		type: 'Open research infrastructure',
 		description:
-			'Reproducible research workflows, evaluation systems, and tools for turning ambitious ideas into inspectable evidence.',
+			'Reproducible workflows, evaluation systems, and tools for turning ambitious AI research into inspectable evidence.',
 		link: 'https://github.com/KalielWilliamson/alphaflow',
 		linkLabel: 'Explore the project',
 	},
@@ -33,8 +33,8 @@ const projects = [
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="Kaliel Williamson — research engineer." />
-		<title>Kaliel Williamson — Research Engineer</title>
+		<meta name="description" content="Kaliel Williamson — machine learning engineer and research engineer focused on large-scale learning and agentic systems." />
+		<title>Kaliel Williamson — ML &amp; Research Engineer</title>
 	</head>
 	<body>
 		<main>
@@ -42,17 +42,18 @@ const projects = [
 				<a class="wordmark" href="#top">KW<span>.</span></a>
 				<div class="nav-links">
 					<a href="#work">Work</a>
+					<a href="#focus">Focus</a>
 					<a href="#about">About</a>
 					<a href="#connect">Connect</a>
 				</div>
 			</nav>
 
 			<section class="hero" id="top" aria-labelledby="hero-heading">
-				<p class="eyebrow">Research engineer</p>
-				<h1 id="hero-heading">Making difficult ideas <em>observable.</em></h1>
+				<p class="eyebrow">Machine learning engineer &amp; research engineer</p>
+				<h1 id="hero-heading">Building learning systems that <em>reason, act, and scale.</em></h1>
 				<p class="lede">
-					I work at the boundary of machine learning research, robust systems, and scientific
-					software—building tools that make ambitious claims easier to test, understand, and use.
+					I focus on large-scale deep learning, agentic systems, and cognitive architectures—
+					building the research and engineering foundations for more capable AI.
 				</p>
 				<div class="hero-actions">
 					<a class="button primary" href="#work">Selected work <span aria-hidden="true">↓</span></a>
@@ -63,7 +64,7 @@ const projects = [
 			<section class="work" id="work" aria-labelledby="work-heading">
 				<div class="section-heading">
 					<p class="eyebrow">Selected work</p>
-					<h2 id="work-heading">Research with a path to practice.</h2>
+					<h2 id="work-heading">Research with a path to intelligent systems.</h2>
 				</div>
 				<div class="project-list">
 					{projects.map((project, index) => (
@@ -82,20 +83,45 @@ const projects = [
 				</div>
 			</section>
 
+			<section class="focus" id="focus" aria-labelledby="focus-heading">
+				<div class="section-heading">
+					<p class="eyebrow">Research direction</p>
+					<h2 id="focus-heading">Large-scale learning is a systems problem.</h2>
+				</div>
+				<div class="focus-grid">
+					<article>
+						<p class="focus-number">01</p>
+						<h3>Large-scale learning</h3>
+						<p>Training, evaluating, and understanding deep learning systems at meaningful scale.</p>
+					</article>
+					<article>
+						<p class="focus-number">02</p>
+						<h3>Agentic systems</h3>
+						<p>Designing agents that can reason over goals, act reliably, and improve through feedback.</p>
+					</article>
+					<article>
+						<p class="focus-number">03</p>
+						<h3>Cognitive architectures</h3>
+						<p>Exploring the structures that can make learning systems more adaptive, coherent, and capable.</p>
+					</article>
+				</div>
+			</section>
+
 			<section class="about" id="about" aria-labelledby="about-heading">
 				<div class="section-heading">
 					<p class="eyebrow">About</p>
-					<h2 id="about-heading">Research is stronger when its evidence is legible.</h2>
+					<h2 id="about-heading">Research-minded engineering, grounded in practice.</h2>
 				</div>
 				<div class="about-copy">
 					<p>
-						I am a research engineer interested in the systems that connect theory, experiments,
-						and real-world deployment. My work combines careful empirical practice with the
-						engineering required to make results reproducible.
+						I am an AI/ML engineer and research engineer interested in the systems that connect
+						theory, experiments, and real-world deployment. My work combines careful empirical
+						practice with the engineering required to make results reproducible and useful.
 					</p>
 					<p>
-						This site collects the projects, writing, and open-source work that shape that
-						practice.
+						My professional path spans enterprise software, MLOps, applied machine learning,
+						multimodal deep learning, and AI/ML technical leadership. I am now applying that
+						foundation to the frontier of large-model training and cognitive systems.
 					</p>
 				</div>
 			</section>
@@ -138,8 +164,9 @@ const projects = [
 	.hero-actions { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 36px; }.button { display: inline-flex; gap: 10px; align-items: center; font-size: .92rem; text-decoration: none; }.primary { padding: 12px 18px; background: var(--ink); color: var(--canvas); }.text { padding: 12px 4px; }
 	section { border-top: 1px solid var(--line); padding: clamp(76px, 10vw, 124px) 0; }.section-heading { max-width: 650px; }.section-heading h2, .connect h2 { font-size: clamp(2.5rem, 5.4vw, 4.7rem); }
 	.project-list { margin-top: 64px; }.project { display: grid; grid-template-columns: 70px minmax(0, 1fr) auto; gap: 25px; padding: 31px 0; border-top: 1px solid var(--line); align-items: start; }.project:last-child { border-bottom: 1px solid var(--line); }.project h3 { font-size: clamp(1.6rem, 3vw, 2.45rem); }.project p:not(.project-type) { max-width: 540px; margin: 12px 0 0; color: var(--muted); }.project-link { white-space: nowrap; font-size: .9rem; }
+	.focus-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 64px; }.focus-grid article { min-height: 255px; padding: 25px; background: var(--surface); }.focus-number { margin: 0 0 58px; color: var(--accent); font: 500 .72rem 'DM Mono', monospace; letter-spacing: .08em; }.focus-grid h3 { font-size: clamp(1.45rem, 2.5vw, 2rem); }.focus-grid p:not(.focus-number) { margin: 13px 0 0; color: var(--muted); font-size: .95rem; }
 	.about { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(40px, 12vw, 150px); }.about-copy { max-width: 460px; color: #3b4941; font-size: 1.1rem; }.about-copy p:first-child { margin-top: 0; }
 	.connect { padding-bottom: clamp(82px, 12vw, 150px); }.connect h2 { max-width: 850px; }.contact-links { display: flex; flex-wrap: wrap; gap: 8px 26px; margin-top: 38px; }.contact-links a { font-size: 1.05rem; }
 	footer { display: flex; justify-content: space-between; padding: 25px 0 40px; color: var(--muted); border-top: 1px solid var(--line); font-size: .82rem; } footer p { margin: 0; }
-	@media (max-width: 680px) { main, footer { width: min(100% - 32px, 1180px); } .nav-links { gap: 15px; } .project { grid-template-columns: 40px 1fr; gap: 16px; }.project-link { grid-column: 2; }.about { display: block; }.about-copy { margin-top: 42px; } footer { gap: 12px; } }
+	@media (max-width: 680px) { main, footer { width: min(100% - 32px, 1180px); } .nav-links { gap: 15px; } .project { grid-template-columns: 40px 1fr; gap: 16px; }.project-link { grid-column: 2; }.focus-grid { grid-template-columns: 1fr; gap: 10px; margin-top: 42px; }.focus-grid article { min-height: 0; }.focus-number { margin-bottom: 34px; }.about { display: block; }.about-copy { margin-top: 42px; } footer { gap: 12px; } }
 </style>
