@@ -5,6 +5,7 @@ const siteUrl = 'https://kalielwilliamson.com/';
 const socialImage = new URL(`${siteBase}social-card.svg`, siteUrl).href;
 
 const links = {
+	email: 'contactme@kalielwilliamson.com',
 	github: 'https://github.com/KalielWilliamson',
 	linkedin: 'https://www.linkedin.com/in/kaliel-williamson-94105188',
 	zenodo: 'https://zenodo.org/records/21889140',
@@ -144,7 +145,10 @@ const personSchema = {
 			<section class="connect" id="connect" aria-labelledby="connect-heading">
 				<p class="eyebrow">Connect</p>
 				<h2 id="connect-heading">Open to thoughtful research and engineering conversations.</h2>
+				<p class="contact-intro">For research, collaboration, or professional inquiries, email me directly.</p>
+				<a class="email-link" href={`mailto:${links.email}`}>{links.email}</a>
 				<div class="contact-links">
+					<span class="contact-links-label">Elsewhere</span>
 					<a href={links.linkedin}>LinkedIn <span aria-hidden="true">&nearr;</span></a>
 					<a href={links.github}>GitHub <span aria-hidden="true">&nearr;</span></a>
 					<a href={links.zenodo}>Zenodo <span aria-hidden="true">&nearr;</span></a>
@@ -180,7 +184,7 @@ const personSchema = {
 	.project { display: grid; grid-template-columns: 70px minmax(0, 1fr) auto; gap: 25px; padding: 42px 0; margin-top: 64px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); align-items: start; }.project h3 { max-width: 760px; font-size: clamp(1.8rem, 3.4vw, 3rem); }.project p:not(.project-type):not(.evidence-line) { max-width: 720px; margin: 16px 0 0; color: var(--muted); font-size: 1.04rem; }.evidence-line { margin: 20px 0 0; color: var(--ink); font: 500 .78rem 'DM Mono', monospace; }.project-links { display: grid; gap: 11px; min-width: 90px; font-size: .9rem; }
 	.focus-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 64px; }.focus-grid article { min-height: 270px; padding: 25px; background: var(--surface); }.focus-number { margin: 0 0 58px; color: var(--accent); }.focus-grid h3 { font-size: clamp(1.45rem, 2.5vw, 2rem); }.focus-grid p:not(.focus-number) { margin: 13px 0 0; color: var(--muted); font-size: .98rem; }
 	.about { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(40px, 12vw, 150px); }.about-copy { max-width: 500px; color: #35433c; font-size: 1.1rem; }.about-copy p:first-child { margin-top: 0; }
-	.connect { padding-bottom: clamp(82px, 12vw, 150px); }.connect h2 { max-width: 880px; }.contact-links { display: flex; flex-wrap: wrap; gap: 8px 26px; margin-top: 38px; }.contact-links a { font-size: 1.05rem; }
+	.connect { padding-bottom: clamp(82px, 12vw, 150px); }.connect h2 { max-width: 880px; }.contact-intro { max-width: 520px; margin: 30px 0 0; color: var(--muted); font-size: 1.06rem; }.email-link { display: inline-block; margin-top: 13px; color: var(--accent); font: 500 clamp(1.15rem, 2.2vw, 1.45rem) 'DM Mono', monospace; letter-spacing: -.04em; text-underline-offset: 7px; }.contact-links { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 26px; margin-top: 38px; }.contact-links-label { color: var(--muted); font: 500 .78rem 'DM Mono', monospace; letter-spacing: .08em; text-transform: uppercase; }.contact-links a { font-size: 1.05rem; }
 	footer { display: flex; justify-content: space-between; padding: 25px 0 40px; color: var(--muted); border-top: 1px solid var(--line); font-size: .82rem; } footer p { margin: 0; }
 	@media (max-width: 680px) { main, footer { width: min(100% - 32px, 1180px); } .nav-links { gap: 15px; } .proof-strip { gap: 8px 16px; }.project { grid-template-columns: 40px 1fr; gap: 16px; margin-top: 42px; }.project-links { grid-column: 2; display: flex; flex-wrap: wrap; gap: 16px; }.focus-grid { grid-template-columns: 1fr; gap: 10px; margin-top: 42px; }.focus-grid article { min-height: 0; }.focus-number { margin-bottom: 34px; }.about { display: block; }.about-copy { margin-top: 42px; } footer { gap: 12px; } }
 	@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
