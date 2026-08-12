@@ -1,8 +1,8 @@
 ---
 const baseUrl = import.meta.env.BASE_URL;
-const siteBase = `${baseUrl}/`;
-const siteUrl = 'https://kalielwilliamson.github.io/kalielwilliamson.com/';
-const socialImage = new URL(`${siteBase}social-card.svg`, 'https://kalielwilliamson.github.io').href;
+const siteBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+const siteUrl = 'https://kalielwilliamson.com/';
+const socialImage = new URL(`${siteBase}social-card.svg`, siteUrl).href;
 
 const links = {
 	github: 'https://github.com/KalielWilliamson',
